@@ -1,0 +1,268 @@
+<html>
+     <head>
+	    <title>Harmony</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+     </head>
+	 
+     <body>
+	    <div class="container">
+	       <div class="logo">
+	          <img src="harmony.jpg" />
+	       </div>
+		   <div class="content">
+		        <div class="left-col">
+			     <h1>THIS<br/>IS<br/>MY<br/>COLLECTION</h1>
+			    </div>
+		        <div class="right-col">
+				    <table style="width:100%">
+					
+					<tr> <th style="width:33%"> </th> <th style="width:33%"> </th> <th style="width:33%"> </th> </tr>
+					
+					<tr>
+					  <td>
+			            <p>Mountain Stream</p>
+				      </td>
+				      <td>
+				        <img src="play.png" width="100" height="100" id="icon1" />
+				      </td>
+					  
+					  <td> </td>
+				   
+				     <td>
+				       <p>Raindrops</p>
+				     </td>
+				     <td>
+				       <img src="play.png" width="100" height="100" id="icon2" />
+				     </td>	
+				   </tr>
+				   <tr>
+				     <td>
+				       <p>Snowy Morning</p>
+				     </td>
+				     <td>
+				       <img src="play.png" width="100" height="100" id="icon3" />
+				     </td>
+					 
+					 <td></td>
+					
+				     <td>
+				       <p>Chirping Birds</p>
+				     </td>
+				     <td>
+				       <img src="play.png" width="100" height="100" id="icon4" />
+				     </td>	
+				   </tr>
+				   <tr>
+				     <td>
+				       <p>Spring Water</p>
+				     </td>
+				     <td>
+				       <img src="play.png" width="100" height="100" id="icon5" />
+				     </td>	
+					 
+					 <td></td>
+				   
+				     <td>
+				       <p>Wild Stream</p>
+				     </td>
+				     <td>
+				       <img src="play.png" width="100" height="100" id="icon6" />
+				     </td>	
+				   </tr>
+				   <tr>
+				     <td>
+				       <p>Good/Bad Weather</p>
+				     </td>
+				     <td>
+				       <img src="play.png" width="100" height="100" id="icon7" />
+				     </td>	
+				   
+					<td></td>
+				   
+				     <td>
+				       <p>Far From Home</p>
+				     </td>
+				     <td>
+				       <img src="play.png" width="100" height="100" id="icon8" />
+				     </td>	
+				   </tr>
+				   <tr>
+				     <td>
+				       <p>Through The Window</p>
+				     </td>
+				     <td>
+				       <img src="play.png" width="100" height="100" id="icon9" />
+				     </td>	
+				   </tr>
+				   
+				   <td></td>
+				   <td></td>
+				   
+				   </table>
+			   </div>
+		   </div>
+	    </div>
+		
+		  
+		  <audio id="mySound1">
+		      <source src="stream.mp3" type="audio/mp3" />
+			 </audio>
+		  
+		  <audio id="mySound2">
+		      <source src="rain.mp3" type="audio/mp3" />
+			  </audio>
+		  <audio id="mySound3">
+		      <source src="snow.mp3" type="audio/mp3" />
+			  </audio>
+		  <audio id="mySound4">
+		      <source src="bird.mp3" type="audio/mp3" />
+			  </audio>
+		  <audio id="mySound5">
+		      <source src="stream2.mp3" type="audio/mp3" />
+			  </audio>
+		  <audio id="mySound6">
+		      <source src="stream3.mp3" type="audio/mp3" />
+			  </audio>
+		  <audio id="mySound7">
+		      <source src="rainfall.mp3" type="audio/mp3" />
+			  </audio>
+		  <audio id="mySound8">
+		      <source src="stream4.mp3" type="audio/mp3" />
+			  </audio>
+		  <audio id="mySound9">
+		      <source src="wet.mp3" type="audio/mp3"/>
+		  </audio>
+		  
+		<script>
+			<!-- mountain stream -->
+		   var mysound1 = document.getElementById("mySound1");
+		   var icon1 = document.getElementById("icon1");
+		   
+		    icon1.onclick = function() { 
+			  if(mysound1.paused){
+				mysound1.play();
+				icon1.src = "pause.png";
+			  }else{
+				mysound1.pause();
+				icon1.src = "play.png";
+			  }
+			}
+			 
+			
+			<!-- raindrops -->
+			var mysound2 = document.getElementById("mySound2");
+		    var icon2 = document.getElementById("icon2");
+		   
+		    icon2.onclick = function() { 
+			  if(mysound2.paused){
+				mysound2.play();
+				icon2.src = "pause.png";
+			  }else{
+				mysound2.pause();
+				icon2.src = "play.png";
+			  }
+			}
+			 
+			 <!-- snowy morning -->
+			var mysound3 = document.getElementById("mySound3");
+		    var icon3 = document.getElementById("icon3");
+		   
+		    icon3.onclick = function() { 
+			  if(mysound3.paused){
+				mysound3.play();
+				icon3.src = "pause.png";
+			  }else{
+				mysound3.pause();
+				icon3.src = "play.png";
+			  }
+			}
+			
+			<!-- chirping birds -->
+			var mysound4 = document.getElementById("mySound4");
+		    var icon4 = document.getElementById("icon4");
+		   
+		    icon4.onclick = function() { 
+			  if(mysound4.paused){
+				mysound4.play();
+				icon4.src = "pause.png";
+			  }else{
+				mysound4.pause();
+				icon4.src = "play.png";
+			  }
+			}
+			
+			<!-- spring water -->
+			var mysound5 = document.getElementById("mySound5");
+		    var icon5 = document.getElementById("icon5");
+		   
+		    icon5.onclick = function() { 
+			  if(mysound5.paused){
+				mysound5.play();
+				icon5.src = "pause.png";
+			  }else{
+				mysound5.pause();
+				icon5.src = "play.png";
+			  }
+			}
+			 
+			 <!-- wild stream -->
+			var mysound6 = document.getElementById("mySound6");
+		    var icon6 = document.getElementById("icon6");
+		   
+		    icon6.onclick = function() { 
+			  if(mysound6.paused){
+				mysound6.play();
+				icon6.src = "pause.png";
+			  }else{
+				mysound6.pause();
+				icon6.src = "play.png";
+			  }
+			}
+			
+			 <!-- good/bad weather -->
+			var mysound7 = document.getElementById("mySound7");
+		    var icon7 = document.getElementById("icon7");
+		   
+		    icon7.onclick = function() { 
+			  if(mysound7.paused){
+				mysound7.play();
+				icon7.src = "pause.png";
+			  }else{
+				mysound7.pause();
+				icon7.src = "play.png";
+			  }
+			}
+			
+			<!-- far from home -->
+			var mysound8 = document.getElementById("mySound8");
+		    var icon8 = document.getElementById("icon8");
+		   
+		    icon8.onclick = function() { 
+			  if(mysound8.paused){
+				mysound8.play();
+				icon8.src = "pause.png";
+			  }else{
+				mysound8.pause();
+				icon8.src = "play.png";
+			  }
+			}
+			
+			<!-- through the window -->
+			var mysound9 = document.getElementById("mySound9");
+		    var icon9 = document.getElementById("icon9");
+		   
+		    icon9.onclick = function() { 
+			  if(mysound9.paused){
+				mysound9.play();
+				icon9.src = "pause.png";
+			  }else{
+				mysound9.pause();
+				icon9.src = "play.png";
+			  }
+			}
+			 
+			 
+		</script>
+     </body>
+</html>
